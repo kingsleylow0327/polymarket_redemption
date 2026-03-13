@@ -103,4 +103,6 @@ if __name__ == "__main__":
         exit(1)
     positions = get_redeemable_positions(settings)
     for pos in positions:
-        redeem_via_proxy(settings, w3, pos["conditionId"])
+        condition_id = pos.get('conditionId')
+        if condition_id:
+            redeem_via_proxy(settings, w3, condition_id)
