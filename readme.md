@@ -1,5 +1,6 @@
-# How to
+# Disclaimer, all address found in this repo are official Polymarket and USDC smart contract addresses, you can verify it on [Polygonscan](https://polygonscan.com/)
 
+# How to Start?
 ## 0. To try, make sure you have:
 1. Some POL in your Metamask wallet
 2. You have a Unredeemed position in Polymarket
@@ -28,3 +29,4 @@ py redeem_service.py
 ## Things to take note
 ### When you have ran the script, check if your machine match any error during Polymarket connection, if you have any error, try to reorder the sequence of RPC_URLS in .env file. The first RPC_URLS that works will be used.
 
+### If you need to implement this script to your code, you may refer to line 99 in redeem_service.py
